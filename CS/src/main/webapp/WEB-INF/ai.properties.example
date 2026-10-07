@@ -1,0 +1,5 @@
+# Copy this file as ai.properties in the same WEB-INF directory.
+# Do not put a real API key in a distributed source archive.
+AI_API_URL=https://api.deepseek.com/chat/completions
+AI_API_KEY=YOUR_DEEPSEEK_API_KEY
+AI_MODEL=deepseek-chat
