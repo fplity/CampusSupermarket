@@ -28,6 +28,6 @@
     async function removeReview(rid){if(!confirm("确定删除该评价吗？")){return;}const resp=await axios.get(API_BASE+"/review",{params:{op:"delete",rid,account}});if(Number(resp.data)===1){await loadReviews();}else{alert("删除失败");}}
     loadProducts();loadReviews();
 </script>
-<footer class="project-footer" style="padding: 16px; text-align: center; color: #667085; font-size: 13px;">刘建平 · 校园超市管理系统</footer>
+<footer class="project-footer" style="padding: 16px; text-align: center; color: #667085; font-size: 13px;">刘煜平 · 校园超市管理系统</footer>
 </body>
 </html>

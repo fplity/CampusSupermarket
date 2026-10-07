@@ -29,6 +29,6 @@
     document.querySelector("#pay").onclick=async function(){ if(!oid.value){alert("暂无待支付订单");return;} const resp=await axios.get(API_BASE+"/payment",{params:{op:"add",oid:oid.value,payMethod:document.querySelector("#payMethod").value}}); if(Number(resp.data)===1){alert("支付成功");await loadOrders();await loadPayments();}else{alert("支付失败，订单可能已支付");} };
     loadOrders(); loadPayments();
 </script>
-<footer class="project-footer" style="padding: 16px; text-align: center; color: #667085; font-size: 13px;">刘建平 · 校园超市管理系统</footer>
+<footer class="project-footer" style="padding: 16px; text-align: center; color: #667085; font-size: 13px;">刘煜平 · 校园超市管理系统</footer>
 </body>
 </html>

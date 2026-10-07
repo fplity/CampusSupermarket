@@ -26,6 +26,6 @@
     document.querySelector("#report").onclick=async function(){const resp=await axios.get(API_BASE+"/aiReport");document.querySelector("#reportText").textContent=(resp.data.aiEnabled?"AI 已调用\n\n":"当前为本地报告模板，配置 AI_API_URL 和 AI_API_KEY 后将调用模型\n\n")+resp.data.report;};
     document.querySelector("#download").onclick=function(){const text=document.querySelector("#reportText").textContent;if(text==="等待生成"){alert("请先生成报告");return;}const blob=new Blob([text],{type:"text/plain;charset=utf-8"});const link=document.createElement("a");link.href=URL.createObjectURL(blob);link.download="校园超市AI经营报告.txt";link.click();URL.revokeObjectURL(link.href);};
 </script>
-<footer class="project-footer" style="padding: 16px; text-align: center; color: #667085; font-size: 13px;">刘建平 · 校园超市管理系统</footer>
+<footer class="project-footer" style="padding: 16px; text-align: center; color: #667085; font-size: 13px;">刘煜平 · 校园超市管理系统</footer>
 </body>
 </html>
